@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rosa-app</title>
+    <link rel="stylesheet" href="d.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/530d9cdcc0.js"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <div class="title">
+          <h2>To-do list</h2>
+          <i class="fa-regular fa-rectangle-list"></i>
+        </div>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your text" />
+          <button class="add-task" onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- pop up delete -->
+    <div class="modal hide">
+      <div class="pop-up hide">
+        <p>Are you sure you want to delete this ?</p>
+        <div class="btns">
+          <button id="delete">Yes</button>
+          <button id="cancel">No</button>
+        </div>
+      </div>
+    </div>
+    <!-- end pop up delete -->
+
+    <script src="../content/jav.js"></script>
+  </body>
+</html>
